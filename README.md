@@ -13,7 +13,9 @@ This repository contains python-based scripts to reproduce the calculations pres
 ### `j_index()`: This method computes the Stetson index J of a light curve, following the definition provided in Ma+2024
 ### `s()`: This method computes the smoothness parameter s of a light curve. It includes the corrections presented in D. Martinez Collipal & S. Panda 2026
 
-To run the scripts it is necessary to install the package numpy, which can be installed via:
+The presented scripts were developed and tested using Python 3.11.15 and NumPy 2.4.3. However, due to the use of standard functions, we expect them to be compatible with multiple versions.
+
+The package numpy can be installed via:
 ```bash
 $ pip install numpy
     
