@@ -142,7 +142,7 @@ class LC:
         return j
 
 
-    """ SMOOTHNESS PARAMETER AS DEFINED IN MA+2024 """
+    """ SMOOTHNESS PARAMETER AS DEFINED IN D. Martinez Collipal & S. Panda 2026 """
     
     def s(self):
 
