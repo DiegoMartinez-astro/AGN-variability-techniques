@@ -1,7 +1,4 @@
 import numpy as np
-import matplotlib.pyplot as plt
-import pandas as pd
-import os 
 
 # CLASS LIGHT CURVE
 class LC:
@@ -12,29 +9,6 @@ class LC:
         self.yerr = np.array(yerr)
         self.label = label
         self.color = color
-
-        
-    def plot(self, invert=True, save_to=None):
-        """Plot method"""
-        plt.figure(figsize=(9, 5))
-        plt.errorbar(self.t, self.y, yerr=self.yerr, fmt='.', color=self.color, label=self.label)
-        
-        if invert:
-            plt.gca().invert_yaxis() # Invert y-axis for magnitudes
-
-
-        # label axis, magnitudes are assumed
-        
-        plt.xlabel('MJD')
-        plt.ylabel('Mag')
-        plt.legend()
-        
-        # Choose if save or not based on input
-        if save_to:
-            plt.savefig(save_to, bbox_inches='tight')
-            plt.close()
-        else:
-            plt.show()
 
     """WEIGHTED BINNING FUNCTION"""
 
